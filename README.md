@@ -59,6 +59,14 @@ Verify it worked
 
 If both of these are true, you should be ready to go.
 
+## libjpeg
+
+In order to get ogr2ogr geojson to shapefile conversion to work I had to build a custom version of the libjpeg binaries.
+
+I started with the libjpgeg 9a source tarball and built that as per the normal heroku binary vendoring process.
+
+The major hack is that after make installing the binaries I had to create a symbolic link in the lib directory for libjpeg.so.62 to work. Then I tarred that up and put it on S3 for vendor_urls.
+
 ## Tools
 
 We found the heroku repo plugin to be useful during the debugging process :
