@@ -12,6 +12,7 @@ Create this .buildpacks file in the root of your project.
 
 Create this .vendor_urls file in the root of your project.
 
+http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/libjpeg-9a.tar.gz
 http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/gdal-1.10.1-1.tar.gz
 http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/proj-4.8.0-1.tar.gz
 http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/geos-3.4.1.tar.gz
