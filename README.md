@@ -6,16 +6,16 @@ This buildpack overwrites Heroku's default .bundle/config to set BUNDLE_BUILD__R
 
 Create this .buildpacks file in the root of your project.
 
-    https://github.com/trailheadlabs/heroku-buildpack-vendorbinaries.git
-    https://github.com/trailheadlabs/heroku-buildpack-rgeo-prep.git
+    https://github.com/camsys/heroku-buildpack-vendorbinaries.git
+    https://github.com/camsys/heroku-buildpack-rgeo-prep.git
     https://github.com/heroku/heroku-buildpack-ruby.git
 
 Create this .vendor_urls file in the root of your project.
 
-http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/libjpeg-9a.tar.gz
-http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/gdal-1.10.1-1.tar.gz
-http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/proj-4.8.0-1.tar.gz
-http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/geos-3.4.1.tar.gz
+https://s3-us-west-2.amazonaws.com/heroku.buildpack.binaries/libjpeg-9a.tar.gz
+https://s3-us-west-2.amazonaws.com/heroku.buildpack.binaries/gdal-1.10.1-1.tar.gz
+https://s3-us-west-2.amazonaws.com/heroku.buildpack.binaries/proj-4.8.0-1.tar.gz
+https://s3-us-west-2.amazonaws.com/heroku.buildpack.binaries/geos-3.4.1.tar.gz
 
 Add these files to git.
 
@@ -81,7 +81,9 @@ Running the following commands let us clear out the buildpacks so that we could 
     
 ## Credits
 
-This is really just a fork for use in Trailhead Labs applications of :
+This is really just a fork for use in Camsys applications of :
+
+* https://github.com/trailheadlabs/heroku-buildpack-rgeo-prep
 
 * https://github.com/aaronrenner/heroku-buildpack-rgeo-prep
 
